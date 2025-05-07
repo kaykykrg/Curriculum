@@ -1,0 +1,80 @@
+@font-face {
+  font-family: 'gameria'; /* Nome da fonte */
+  src: url(fontes/GAMERIA.ttf) format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+body {
+  background-image: url('imgs/background.gif'); /* imgs do arquivo GIF */
+  background-size: cover; /* Ajusta para cobrir toda a tela */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-position: center; /* Centraliza o fundo */
+  height: 100vh; /* Define altura da tela */
+  width: 100vw; /* Define largura da tela */
+  overflow: hidden; /* Remove barras de rolagem */
+}
+
+#div1 {
+    width: 300px; /* Largura do quadro */
+    height: 200px; /* Altura do quadro */
+    border: 1px solid black; /* Borda do quadro */
+    background-color: 255, 255, 255, 5.0; /* Fundo do quadro */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px;
+    margin: 20px; /* Espaçamento externo */
+    backdrop-filter: blur(50px); /* Desfoque do fundo */
+    opacity: 99%; /* Opacidade do quadro */
+    transition: transform 0.3s ease-in-out; /* Transição suave */
+  }
+
+#div2 {
+    width: 400px; /* Largura do quadro */
+    height: 200px; /* Altura do quadro */
+    border: 1px solid black; /* Borda do quadro */
+    background-color: lightgray, 5.0; /* Fundo do quadro */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px;
+    margin: 20px; /* Espaçamento externo */
+    backdrop-filter: blur(50px); /* Desfoque do fundo */
+    opacity: 99%;
+  }
+
+#div3 {
+    width: 300px; /* Largura do quadro */
+    height: 200px; /* Altura do quadro */
+    border: 1px solid black; /* Borda do quadro */
+    background-color: lightgray, 5.0; /* Fundo do quadro */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 10px;
+    margin: 20px; /* Espaçamento externo */
+    backdrop-filter: blur(50px); /* Desfoque do fundo */
+    opacity: 99%; /* Opacidade do quadro */
+  }
+  
+.cabeca { 
+    display: flex;
+    justify-content: center; /* Alinha os itens no espaço disponível */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    gap: 20px; /* Espaçamento entre os itens */
+    color: aliceblue; /* Cor do texto */
+    font-family: sans-serif; /* Fonte do texto */
+}
+
+#div1:hover, #div2:hover, #div3:hover {
+  transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+  transition: transform 0.3s; /* Transição suave */
+  opacity: 1; /* Opacidade total ao passar o mouse */
+}
+
+header h1 {
+  color: #ffee00; /* Cor do texto */
+  text-align: center;
+  font-family:'gameria'; /* Fonte personalizada */
+  font-size: 30px; /* Tamanho da fonte */
+}
+
+header p {
+  color: #fefefe; /* Cor do texto */
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 20px; /* Tamanho da fonte */
+}
